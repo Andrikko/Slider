@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AndMarket</title>
+    <link rel="stylesheet" href='css/reset.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+</head>
+<body ng-app='myApp'>
+    <nav>
+        <div class="logo"></div>
+        <ul class='ul'>
+            <li><a href="">Home</a></li>
+            <li><a href="">New</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+        <input class="nav_input" type="text" value="Search">
+    </nav>
+   <div id='mainDiv'>
+       <div id='content'></div>
+   </div>
+   <br><br><br><br>
+   <div class='container' ng-controller = 'myCtrl'>
+       <input type="text" class="seasch" placeholder="Searsh">
+       <div class="row">
+           <div class="item" ng-repeat='a in records'>
+               <img class="img" src="">
+               <p class='h3 font'>{{a.name}}</p>
+               <p class="little_p font">{{a.price}}</p>
+           </div>
+       </div>
+   </div>
+    
+    <script src="js/slaider.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
